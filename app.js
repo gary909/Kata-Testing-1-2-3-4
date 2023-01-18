@@ -1,6 +1,11 @@
 var number=function(array){
-    //your awesome code here
-    return "hi";
+    let newArr = [];
+    let myNum = 0;
+    for(var i = 1; i <= array.length; i++){
+        newArr.push(i + ": " +  array[myNum])
+        myNum = myNum + 1;
+    }
+    return newArr;
 }
 
 console.log(number([])); // []
